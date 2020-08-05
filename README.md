@@ -8,7 +8,7 @@
 
 ---
 
-### II. Prereqisites
+### II. Prereqisitesp
 
 + PHP
 + MySQL
@@ -78,4 +78,10 @@ Or full (Create Function index, create, store, show, edit, update and destroy)
 ```
 php artisan make:controller HelloController --resource
 
+```
+
+Install Laravel CkEditor [link](https://artisansweb.net/install-use-ckeditor-laravel/)
+
+```
+composer require ckeditor/ckeditor
 ```

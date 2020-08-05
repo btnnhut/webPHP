@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','HomePageController@index');
+Route::resource('editor', 'CKEditorController');
 Route::get('/listing','ListingController@index');
 Route::get('/details','DetailsController@index');
 Route::get('/helloBTN', function () {
@@ -44,3 +45,10 @@ Route::group(['prefix'=>'back'],function(){
 	Route::get('/category/create','Admin\CategoryController@create');
 	Route::get('/category/edit','Admin\CategoryController@edit');
 });
+Route::get('/query','DbController@index');
+Route::get('/joining','DbController@joining');
+Route::get('/model','DbController@model');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
